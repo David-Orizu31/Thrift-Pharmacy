@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrift Pharmacy</title>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap Styles -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Font google apis -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Animate.Css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="aos/aos.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <!-- Font Awesome Js -->
+   <script src="js/font-awesome.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><h4>Thrift Pharmacy</h4></a>
+          <button class="navbar-toggler nav-toggle p-0 border-0" type="button" aria-controls="navbarSupportedContent"  data-bs-toggle="offcanvas" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="bar-top"></span>
+            <span class="bar-mid"></span>
+            <span class="bar-bot"></span>
+          </button>
+          <div class="navbar-collapse offcanvas-collapse offset-md-2" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+                <div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,ru', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="banner-area">
+          <div class="owl-carousel" id="owl-banner">
+              <div class="banner-1">
+                 <div class="container">
+                   <div class="row">
+                     <div class="col-md-7">
+                       <div class="banner-text">
+                         <div class="animate__animated animate__fadeInDown">
+                          <h1>We customize prescriptions That fits you.</h1>
+                         </div>
+                         <div class="animate__animated animate__fadeInDown">
+                       <h5 class="text-white">Manufacture drugs in all forms that gives exactly what you need.</h5>
+                      </div>
+                       <a href="#" class="btn btn-outline-white">Read More</a>
+                       <p></p>
+                      </div>
+                     </div>
+                   </div>
+                 </div>
+              </div>
+
+              <div class="banner-2">
+
+              </div>
+
+              <div class="banner-3">
+
+              </div>
+          </div>
+      </div>
+      
+      <script src="js/scripts.js"></script>
+      <!-- Bootstrap JS -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+$(document).ready(function(){
+  $("#owl-banner").owlCarousel({
+    animateOut: 'fadeOut',
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:5000,
+    items: 1,
+    nav:true,
+    navText : ["<i class='fas fa-chevron-left fa-2x'></i>","<i class='fas fa-chevron-right fa-2x'></i>"]
+  });
+});
+    </script>
+    <script>
+        
+  // WORK IN PROGRESS BELOW
+      	
+$('document').ready(function () {
+
+
+// RESTYLE THE DROPDOWN MENU
+$('#google_translate_element').on("click", function () {
+
+// Change font family and color
+$("iframe").contents().find(".goog-te-menu2-item div, .goog-te-menu2-item:link div, .goog-te-menu2-item:visited div, .goog-te-menu2-item:active div, .goog-te-menu2 *")
+    .css({
+        'color': '#544F4B',
+        'font-family': 'Roboto',
+                        'width':'100%'
+    });
+// Change menu's padding
+$("iframe").contents().find('.goog-te-menu2-item-selected').css ('display', 'none');
+    
+        // Change menu's padding
+$("iframe").contents().find('.goog-te-menu2').css ('padding', '0px');
+
+// Change the padding of the languages
+$("iframe").contents().find('.goog-te-menu2-item div').css('padding', '20px');
+
+// Change the width of the languages
+$("iframe").contents().find('.goog-te-menu2-item').css('width', '100%');
+$("iframe").contents().find('td').css('width', '100%');
+
+// Change hover effects
+$("iframe").contents().find(".goog-te-menu2-item div").hover(function () {
+    $(this).css('background-color', '#4385F5').find('span.text').css('color', 'white');
+}, function () {
+    $(this).css('background-color', 'white').find('span.text').css('color', '#544F4B');
+});
+
+// Change Google's default blue border
+$("iframe").contents().find('.goog-te-menu2').css('border', 'none');
+
+// Change the iframe's box shadow
+$(".goog-te-menu-frame").css('box-shadow', '0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3)');
+
+
+
+// Change the iframe's size and position?
+$(".goog-te-menu-frame").css({
+    'height': '100%',
+    'width': '100%',
+    'top': '0px'
+});
+// Change iframes's size
+$("iframe").contents().find('.goog-te-menu2').css({
+    'height': '100%',
+    'width': '100%'
+});
+});
+});
+    </script>
+
+    <script src="aos/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

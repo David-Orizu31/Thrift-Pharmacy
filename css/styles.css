@@ -1,0 +1,287 @@
+html, body {
+    max-width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+.navbar {
+    background-color: white;
+    padding-top:0px !important;
+}
+
+.navbar-nav .nav-item .nav-link {
+    padding: 20px 15px 10px 15px !important;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+background-color:rgb(50, 120, 200);
+color: white !important;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background-color:rgb(50, 120, 200);
+color: white !important;
+}
+
+.nav-toggle {
+    background: transparent;
+    margin-top: 22px !important;
+    border: 1px solid transparent !important;
+    top: 50%;
+    left: 50%;
+    /*
+     * FOR PRESENTATION ONLY
+     * Centers everything, remove for
+     * practical purposes.
+    */
+    -webkit-transform:(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  
+  .nav-toggle:focus {
+    outline: none !important;
+  }
+
+  .navbar-light .navbar-toggler {
+    color: transparent !important;
+}
+  
+  .nav-toggle [class*='bar-'] {
+    background:rgb(50, 120, 200) !important;
+    display: block;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transition: .2s ease all;
+            transition: .2s ease all;
+    
+    /* 
+     * ENLARGED FOR PRESENTATION
+     * Keep these values at the same proportion 
+     * for it to look correct
+    */
+    border-radius: 8px;
+    height: 3px;
+    width: 35px;
+    margin-bottom: 7px;
+    
+    /*
+     * Practical values:
+     * border-radius: 2px;
+     * height: 2px;
+     * width: 25px;
+     * margin-bottom: 4px;
+    */
+  }
+  
+  .nav-toggle .bar-bot {
+    margin-bottom: 0;
+  }
+  
+  .opened .bar-top {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 15% 15%;
+            transform-origin: 15% 15%;
+  }
+  .opened .bar-mid {
+    opacity: 0;
+  }
+  .opened .bar-bot {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 15% 95%;
+            transform-origin: 15% 95%;
+  }
+
+
+@media (max-width: 991.98px) {
+    .offcanvas-collapse {
+      position: fixed;
+      top: 56px; /* Height of navbar */
+      bottom: 0;
+      left: 100%;
+      width: 100%;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      overflow-y: auto;
+      visibility: hidden;
+      background-color: whitesmoke;
+      transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    }
+    .offcanvas-collapse.open {
+      visibility: visible;
+      transform: translateX(-100%);
+    }
+  }
+
+  #google_translate_element {
+    position: relative;
+    right: 16px !important;
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    border-radius: 5px;
+}
+
+  .goog-te-gadget {
+    font-family: Roboto, 'Open Sans', sans-serif!important;
+    text-transform: uppercase;
+  }
+  .goog-te-gadget-simple  {
+    background-color: rgba(255,255,255,0.20)!important;
+    border: 1px solid rgba(255,255,255,0.50) !important;
+    padding: 8px!important;
+    border-radius: 4px!important;
+    font-size: 1rem!important;
+    line-height:2rem!important;
+    display: inline-block;
+    cursor: pointer;
+    zoom: 1;
+  }
+  .goog-te-menu2 {
+    max-width: 100%;
+  }
+  .goog-te-menu-value {
+    color: #fff !important;
+      &:before {
+      font-family: 'Material Icons';
+      content: "\E927";
+      margin-right: 16px;
+      font-size: 2rem;
+      vertical-align: -10px;
+       /* width:32px!important; */
+    } 
+  }
+  .goog-te-menu-value span:nth-child(5) {
+    display:none;
+  }
+  .goog-te-menu-value span:nth-child(3) {
+    border:none!important;
+    font-family: 'Material Icons';
+    &:after {
+      font-family: 'Material Icons';
+      content: "\E5C5";
+      font-size: 1.5rem;
+      vertical-align: -6px;
+    }  
+  }
+  
+  .goog-te-gadget-icon {
+      background-image: url(https://placehold.it/32)!important;
+      background-position: 0px 0px;
+      height: 32px!important;
+      width: 32px!important;
+      margin-right: 8px!important;
+      display: none;
+  }
+  
+  .goog-te-banner-frame.skiptranslate {display: none!important;} 
+  
+  /* ================================== *\
+      Mediaqueries
+  \* ================================== */
+  @media (max-width: 667px) {
+      #google_translate_element {
+          bottom: calc(100% - 50% - 53px);
+          left: 16px!important;
+          width: 100%!important;
+      }
+          .goog-te-gadget {
+              width:100%!important;
+          }
+          .skiptranslate {
+              width:100%!important;			
+          }
+          .goog-te-gadget-simple {
+              width: calc(100% - 32px)!important;
+              text-align: center;
+          }	
+      }
+      
+.banner-1 {
+    background: url('../img/2f21cf80-915b-4746-b19e-c4f7a0a6dd9d.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+}
+
+.banner-2 {
+  background: url('../img/8c9a4b41-8e6e-4712-814c-b511c66f2184.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+}
+
+.banner-3 {
+  background: url('../img/52befb13-2e1b-4ea2-b3a1-9bcdad7514d3.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+}
+
+
+.fa-chevron-left , .fa-chevron-right {
+  color: white;
+}
+
+.fa-chevron-left:hover , .fa-chevron-right:hover {
+  color: #8199A3;
+}
+
+/* owl nav */
+.owl-prev span, .owl-next span {
+	color: #FFF !important;
+}
+
+.owl-carousel:hover .owl-prev {
+  display: block;
+}
+
+.owl-carousel:hover .owl-next {
+  display: block;
+}
+
+.owl-prev span:hover, 
+.owl-next span:hover {
+	color: #8199A3 !important;
+}
+
+.owl-prev, .owl-next {
+	position: absolute;
+	top: 0;
+	height: 100%;
+  display: none;
+}
+
+.owl-prev {
+	left: 20px;
+}
+
+.owl-next {
+	right: 10px;
+}
+
+/* removing blue outline from buttons */
+button:focus, button:active {
+   outline: none;
+}
+
+.banner-1 .banner-text {
+  color: rgb(50, 120, 200);
+  padding-top: 200px;
+}
+
+.btn-outline-white {
+  color: white !important;
+  border: 1px solid white !important;
+}
+
+.btn-outline-white:hover {
+  background-color: rgb(50, 120, 200) !important;
+}
+
+/* This only changes this particular animation duration */
+.animate__animated.animate__fadeInDown {
+  --animate-duration: 2s;
+}
